@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>NASA's Astronomy Picture of the Day</h1>
+
+    <div class="card-container">
+      <div class="card">
+        <a href="" id="image-link" target="_blank" title="Open HD Image"
+          ><img src="" id="image" alt="Astronomy Picture Of The Day"
+        /></a>
+        <div class="card-body">
+          <h2 id="title"></h2>
+          <h3 id="date"></h3>
+          <hr />
+          <p id="explanation"></p>
+          <footer class="card-footer">
+            <p class="credit" id="credit"></p>
+          </footer>
+        </div>
+      </div>
+      <!-- Loader -->
+      <img id="loader" src="img/loader.svg" id="loader" alt="" />
+    </div>
+
+    <button><span>Show random APOD</span></button>
+
+    <div class="powered-by">
+      <span>Powered by:</span>
+      <a href="https://www.nasa.gov/" target="_blank"
+        ><img class="nasa-logo" src="img/nasa-logo.png" alt=""
+      /></a>
+    </div>
+
+    <script src="js/apiKeyNASA.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

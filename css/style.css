@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  height: 100vh;
+  background: rgb(233, 233, 233);
+}
+
+button,
+#date,
+#title,
+h1 {
+  font-family: 'Righteous', cursive;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card-container {
+  position: relative;
+  max-width: 800px;
+  box-shadow: -1px -2px 11px 4px rgba(209, 209, 209, 1);
+}
+
+.card {
+  background: whitesmoke;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+#title {
+  margin-top: 0;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+#explanation {
+  letter-spacing: 0.02rem;
+  line-height: 1.8rem;
+}
+
+button {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 3rem;
+  padding: 1.2rem;
+  border-radius: 5px;
+  background: whitesmoke;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+@media (hover: hover) {
+  button:hover {
+    background: black;
+    color: whitesmoke;
+  }
+}
+
+button:active {
+  background: black;
+  color: whitesmoke;
+  color: #fc3d21;
+}
+
+button:focus {
+  outline: none;
+}
+
+.card-footer {
+  font-size: 0.8rem;
+  color: rgb(117, 117, 117);
+}
+
+#loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.powered-by {
+  margin-top: auto;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+}
+
+.nasa-logo {
+  max-width: 30px;
+  vertical-align: middle;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .card-container {
+    width: 100%;
+  }
+
+  #explanation {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}
