@@ -71,17 +71,17 @@ button {
   transition: all 0.2s ease;
 }
 
+button:active {
+  background: black;
+  color: whitesmoke;
+  color: #fc3d21;
+}
+
 @media (hover: hover) {
   button:hover {
     background: black;
     color: whitesmoke;
   }
-}
-
-button:active {
-  background: black;
-  color: whitesmoke;
-  color: #fc3d21;
 }
 
 button:focus {
